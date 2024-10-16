@@ -1,0 +1,151 @@
+@charset "utf-8";
+* {}
+
+body {
+  margin: 0;
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  background-color: #e0f7fa;
+  color: #3364A3;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+h1 {
+  text-align: center;
+  animation: fadeIn 1s;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #00796b;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #004d40;
+}
+
+section {
+  padding: 100px 20px;
+  margin-top: 60px;
+  text-align: center;
+  min-height: 600px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media (min-width: 1920px) {
+  body {
+    background-color: #d1f2eb;
+  }
+  .cuadros {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .cuadro {
+    width: 22%;
+    height: 90px;
+    background: #f0f0f0;
+    transition: transform 0.3s, width 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cuadro:hover {
+    transform: scale(1.05);
+    width: 24%;
+  }
+}
+
+
+@media (min-width: 1366px) and (max-width: 1919px) {
+  body {
+    background-color: #e8f8f5;
+  }
+  .cuadros {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .cuadro {
+    width: 22%;
+    height: 90px;
+    background: #f0f0f0;
+    transition: transform 0.3s, width 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cuadro:hover {
+    transform: scale(1.05);
+    width: 24%;
+  }
+}
+
+
+@media (max-width: 375px) {
+  body {
+    background-color: #e6f7f1;
+  }
+  .cuadros {
+    display: block;
+  }
+  .cuadro {
+    width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+  }
+  .cuadro:hover {
+    width: 100%;
+  }
+}
+
+
+.texto-divertido {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
